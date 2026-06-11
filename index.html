@@ -1,1 +1,115 @@
-<body>one</body>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一隅希冀 | 生活随笔</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "SimSun", "宋体", serif;
+            background-color: #000000;
+            color: #d8d8d8;
+            line-height: 2.1;
+            min-height: 100vh;
+            padding: 60px 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 720px;
+            width: 100%;
+            background: #0f0f0f;
+            padding: 50px 45px;
+            border-radius: 6px;
+            border: 1px solid #2a2a2a;
+            animation: fadeIn 1.2s ease-out;
+        }
+
+        /* 英文引言 */
+        .en-quote {
+            font-style: italic;
+            color: #999;
+            font-size: 15px;
+            text-align: left;
+            margin-bottom: 28px;
+            padding-bottom: 22px;
+            border-bottom: 1px solid #333;
+            letter-spacing: 0.5px;
+        }
+
+        /* 主标题（质感宋体艺术字） */
+        .cn-title {
+            font-size: 23px;
+            color: #eaeaea;
+            text-align: left;
+            font-weight: 500;
+            margin-bottom: 38px;
+            letter-spacing: 1.5px;
+        }
+
+        /* 正文（缩进2个汉字） */
+        .content {
+            font-size: 17px;
+            color: #cacaca;
+            text-align: left;
+            text-indent: 2em; /* 2个汉字缩进 */
+            margin-bottom: 26px;
+            letter-spacing: 0.6px;
+        }
+
+        /* 结尾 */
+        .ending-quote {
+            font-size: 19px;
+            color: #e0e0e0;
+            text-align: left;
+            margin-top: 38px;
+            padding-top: 28px;
+            border-top: 1px solid #333;
+            letter-spacing: 1px;
+        }
+
+        /* 动画 */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* 手机适配 */
+        @media (max-width: 550px) {
+            .container { padding: 35px 22px; }
+            .cn-title { font-size: 20px; }
+            .content { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="en-quote">
+            For me, and for you, when you feel all alone and lost — here is where hope lives.
+        </div>
+
+        <div class="cn-title">
+            写给我，写给某天孤独无望的你，在这里，找到希冀。
+        </div>
+
+        <div class="content">
+            那天深夜关了LOL，打开了久违的QQ空间，看到几年前写的日志，旧时光里的暖流涌遍全身。
+        </div>
+        <div class="content">
+            我打算开始记录我的生活，一天一天，一点一滴，让日子开始有厚度，让生命开始有光泽。
+        </div>
+
+        <div class="ending-quote">
+            写给我，写给某天孤独无望的你，在这里，找到希冀。
+        </div>
+    </div>
+</body>
+</html>
